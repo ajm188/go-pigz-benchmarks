@@ -8,3 +8,7 @@ benchmark: testdata/canterbury
 testdata/canterbury: testdata/cantrbry.tar.gz
 	mkdir -p $@
 	tar -xvf $^ -C $@
+
+.PHONY: clean
+clean:
+	rm -rf testdata/canterbury
